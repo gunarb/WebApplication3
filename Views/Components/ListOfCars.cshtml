@@ -1,0 +1,14 @@
+﻿@model IListofcarsItem
+
+<div class="list-of-cars">
+    @Model.title
+
+    @foreach (var car in Model.carlist)
+    {
+        <div class="car">
+            @car.brand
+            <hr/>
+            @car.year
+        </div>
+    }
+</div>
